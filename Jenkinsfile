@@ -12,6 +12,11 @@ stage('Get approval'){
     input "Deploy to qa?"
 }
 node {
+    stage('Demo'){
+        echo "Demoing"
+    }
+}
+node {
     stage('deploy to qa'){
         echo "deploying"
     }
